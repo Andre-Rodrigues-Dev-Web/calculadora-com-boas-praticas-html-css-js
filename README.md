@@ -1,2 +1,3 @@
 # calculadora-com-boas-praticas-html-css-js
- Calculadora com boas praticas com html, css, javascript
+
+O código aqui foi criado para o artigo sobre como construir uma calculadora com boas praticas. Os arquivos podem ser vistos dentro da pasta projetos.
