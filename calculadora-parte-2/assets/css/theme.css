@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+  li {
+    list-style-type: none;
+  }
+  audio,
+  img,
+  iframe,
+  video {
+    display: inline-block;
+    height: auto;
+    width: 100%;
+  }
+}
+/*Theme*/
+.calculator_theme {
+  background-color: #585472;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+/*calculadora*/
+.calculator {
+  background-color: #252b38;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 650px;
+  min-width: 350px;
+  max-width: 350px;
+  .body_calculator {
+    .container_buttons {
+      display: flex;
+      margin: 0 auto;
+      width: 90%;
+      .content_left {
+        .top {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 10px;
+          button {
+            background-image: linear-gradient(120deg, #465262 0%, #626b7c 100%);
+            border: 1px solid #545f71;
+            border-radius: 10px;
+            color: #fff;
+            height: 70px;
+            width: 70px;
+          }
+        }
+        .center {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+          button {
+            background-image: linear-gradient(120deg, #465262 0%, #626b7c 100%);
+            border: 1px solid #545f71;
+            border-radius: 10px;
+            color: #fff;
+            height: 70px;
+            width: 70px;
+          }
+        }
+        .bottom {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-top: 10px;
+          button {
+            background-image: linear-gradient(120deg, #465262 0%, #626b7c 100%);
+            border: 1px solid #545f71;
+            border-radius: 10px;
+            color: #fff;
+            height: 70px;
+            &:first-child {
+              width: 150px;
+            }
+            &:last-child {
+              width: 70px;
+            }
+          }
+        }
+      }
+      .content_right {
+        width: 20%;
+        .buttons_orange {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          button {
+            background-image: linear-gradient(120deg, #dd732f 0%, #e28d21 100%);
+            border: 1px solid #d9781f;
+            border-radius: 10px;
+            color: #fff;
+            height: 70px;
+            width: 70px;
+          }
+        }
+      }
+    }
+  }
+  .header_calculator {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: flex-end;
+    .view {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      justify-content: flex-end;
+      color: #fff;
+      font-size: 3em;
+      padding: 1em;
+    }
+  }
+}

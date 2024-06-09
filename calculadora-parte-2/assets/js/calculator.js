@@ -1,4 +1,7 @@
 //Lista números nos botões na ul com classe center
+const ul = document.querySelector('.center');
+const viewDiv = document.querySelector('.view');
+
 const numeros = {
     1: 7,
     2: 8,
@@ -11,10 +14,12 @@ const numeros = {
     9: 3
 };
 
-const ul = document.querySelector('.center');
 
 Object.entries(numeros).map(([key, value]) => {
     const button = document.createElement('button');
     button.textContent = value;
+    button.addEventListener('click', () => {
+        viewDiv.textContent = value;
+    });
     ul.appendChild(button);
 });
